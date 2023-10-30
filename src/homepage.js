@@ -1,3 +1,3 @@
-export default function pageLoad() {
+export default function homepageLoad() {
     console.log('pageload working well')
 }

@@ -1,5 +1,5 @@
-import pageLoad from './page-load.js'
+import homepageLoad from './homepage.js'
 
 console.log("working..");
 
-pageLoad();
+homepageLoad();
