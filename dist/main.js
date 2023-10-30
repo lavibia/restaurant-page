@@ -1,1 +1,1 @@
-(()=>{"use strict";console.log("working.."),console.log("pageload working well")})();
+(()=>{"use strict";console.log("working.."),console.log("homepageload working well")})();

@@ -1,20 +1,25 @@
-body{
+:root{
+    --dark-background:#2f303f;
+    --light-background: #FFF;
+}
+*{
+    margin: 0;
     box-sizing: border-box;
+}
+body{
+    
     width: 100vw;
     height: 100vh;
-}
-
-#content{
-    height: 100%;
     display: flex;
     flex-direction: column;
     flex: 1;
 }
 #header{
+    background-color: var(--dark-background);
+    padding-left: 80px;
     display: flex;
     flex-direction: row;
-   
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 #logo{
@@ -22,11 +27,58 @@ body{
     height: 100px;
 }
 ul{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+    padding-right: 100px;
+    gap: 50px;
+    font-size: large;
+   
     list-style: none;
 }
-li{
-    display: inline;
+li a{
+    color:white;
+    text-decoration: none;
+
 }
-#hero{
-    flex: 2;
+
+#content{
+    padding-left: 80px;
+    height: 100%;
+    background-color: var(--light-background);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
+#hero-text{
+    font-size: 2em;
+}
+#img-hero{
+    width: fit-content;
+    height: 80vh;
+}
+#flag {
+    width: 80px;
+    height: 56px;
+    box-sizing: content-box;
+    padding-top: 15px;
+    position: relative;
+    background: var(--dark-background);
+    color: white;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  #flag:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 13px solid var(--light-background);
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+  }
