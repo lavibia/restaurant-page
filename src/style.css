@@ -36,7 +36,7 @@ ul{
    
     list-style: none;
 }
-li a{
+li {
     color:white;
     text-decoration: none;
 
